@@ -56,7 +56,7 @@ where:
 
 #  Implementation Details : 
 
-This Statistics Spring Boot provides restful API to monitor the incoming prices. The main use case for that API is to provide real-time price  statistics from the last 60 seconds (sliding time interval).
+This Statistics Spring Boot project  provides restful API to monitor the incoming prices from different Instruments. The main use case for that API is to provide real-time price  statistics from the last 60 seconds (sliding time interval).
 Below are the details about build and RESTFul API details and usage of the application.
 # Build
     . mvn clean install - Make build, run test and generate jar.
