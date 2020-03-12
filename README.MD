@@ -56,7 +56,7 @@ where:
 
 #  Implementation Details : 
 
-This Statistics Spring Boot project  provides restful API to monitor the incoming prices from different Instruments. The main use case for that API is to provide real-time price  statistics from the last 60 seconds (sliding time interval).
+This Statistics Spring Boot project  provides restful API to monitor the incoming prices from different Instruments. The main use case for this API is to provide real-time price  statistics from the last 60 seconds (sliding time interval).
 Below are the details about build and RESTFul API details and usage of the application.
 # Build
     . mvn clean install - Make build, run test and generate jar.
@@ -64,7 +64,7 @@ Below are the details about build and RESTFul API details and usage of the appli
 
 From terminal using curl :  
 ```sh
-$ curl -X POST localhost:8080/ticks  -H "Content-Type: application/json" -d"{\"instrument\": \"IBM.N", \"price\": 143.82 , \"IBM.N", \"timestamp\": 1478192204000}"
+$ curl -X POST localhost:8080/ticks  -H "Content-Type: application/json" -d"{\"instrument\": \"IBM.N", \"price\": 143.82 ,\"timestamp\": 1478192204000}"
 $ curl -X GET localhost:8080/statistics
 {count=5, sum=121.210000, min=121.210000, average=121.210000, max=121.210000}
 $ curl localhost:8080/statistics/IBM 
