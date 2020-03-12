@@ -85,7 +85,7 @@ public class SlidingWindowMonitor {
     }
 
     /**
-     * Adds the error response to the current bucket
+     * Adds the Statistics response to the current bucket
      *
      * @param statisticsRequest
      */
@@ -139,7 +139,7 @@ public class SlidingWindowMonitor {
     }
 
     /**
-     * Returns a copy of the list of buckets
+     * Returns a StatisticsResponse  of buckets
      */
     public StatisticsResponse getStatistics(String key) {
         updateWindow();

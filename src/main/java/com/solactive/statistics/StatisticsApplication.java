@@ -9,5 +9,4 @@ public class StatisticsApplication {
     public static void main(String[] args) throws InterruptedException {
 		SpringApplication.run(StatisticsApplication.class, args);
     }
-
 }
