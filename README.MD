@@ -67,7 +67,7 @@ From terminal using curl :
 $ curl -X POST localhost:8080/ticks  -H "Content-Type: application/json" -d"{\"instrument\": \"IBM.N", \"price\": 143.82 ,\"timestamp\": 1478192204000}"
 $ curl -X GET localhost:8080/statistics
 {count=5, sum=121.210000, min=121.210000, average=121.210000, max=121.210000}
-$ curl localhost:8080/statistics/IBM 
+$ curl -X GET localhost:8080/statistics/IBM 
 {count=1, sum=121.210000, min=121.210000, average=121.210000, max=121.210000}
 ```
 
